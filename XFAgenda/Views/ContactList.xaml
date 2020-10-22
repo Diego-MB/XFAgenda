@@ -4,7 +4,7 @@
              x:Class="XFAgenda.Views.ContactList"
              Title="Lista de Contatos">
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="ADD" Command="{Binding AddCommand}"/>
+        <ToolbarItem Text="ADD" IconImageSource="add_circle_outline_white" Command="{Binding AddCommand}"/>
     </ContentPage.ToolbarItems>
     <ContentPage.Content>        
         <Grid Padding="10,20,10,40">

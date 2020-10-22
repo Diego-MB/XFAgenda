@@ -134,4 +134,13 @@
       <Name>XFAgenda</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\add_circle_outline_white%401x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\add_circle_outline_white%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\add_circle_outline_white%403x.png" />
+  </ItemGroup>
 </Project>

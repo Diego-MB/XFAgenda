@@ -1,10 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="XFAgenda.Views.DetailsPage">
-    <ContentPage.Content>        
-        <StackLayout Padding="20" Spacing="12">
-            
+             x:Class="XFAgenda.Views.DetailsPage"
+             BackgroundColor="Black">
+    <ContentPage.Content>
+        <Frame CornerRadius="20" Margin="20">
+        <StackLayout BackgroundColor="White" Padding="20" Spacing="12">            
             <Entry x:Name="txtContactName" Text="{Binding Name}" HeightRequest="40" BackgroundColor="White" Placeholder="Contact Name" HorizontalOptions="FillAndExpand"/>
             <Entry  x:Name="txtMobileNumber" Keyboard="Telephone" Text="{Binding MobileNumber}" BackgroundColor="White" HeightRequest="40" Placeholder="Mobile Number" HorizontalOptions="FillAndExpand"/>
             <StackLayout Orientation="Horizontal">
@@ -22,20 +23,21 @@
             <Entry x:Name="txtAddress" Text="{Binding Address}" BackgroundColor="White"  HeightRequest="40" Placeholder="Address"  HorizontalOptions="FillAndExpand"/>
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center">   
                 <Button Text="Atualizar" 
-                BorderRadius="0" 
-                Margin="0,0,0,0" 
+                BorderRadius="10"                  
                 FontAttributes="Bold" 
                 TextColor="White" 
-                BackgroundColor="Black" 
+                BackgroundColor="Black"
+                Padding="10"
                 Command="{Binding UpdateContactCommand}" />
             <Button Text="Excluir" 
-                BorderRadius="0" 
-                Margin="0,0,0,0" 
+                BorderRadius="10"                  
                 FontAttributes="Bold" 
                 TextColor="White" 
-                BackgroundColor="Black" 
+                BackgroundColor="Black"
+                Padding="10"
                 Command="{Binding DeleteContactCommand}" />
             </StackLayout>
-        </StackLayout>        
+        </StackLayout>
+        </Frame>
     </ContentPage.Content>
 </ContentPage>

@@ -24,12 +24,20 @@ namespace XFAgenda
 
             //if (getLocalDB.Count > 0)
             //{
-                MainPage = new NavigationPage(new ContactList());
+            MainPage = new NavigationPage(new ContactList()) {
+                //Definindo cor do background e texto
+                BarBackgroundColor = Color.Black,
+                BarTextColor = Color.White
+                
+                };
             //}
             //else
             //{
             //    MainPage = new NavigationPage(new AddContact());
             //}
+            //((NavigationPage)Application.Current.MainPage).BackgroundColor = Color.FromHex("#000000");
+            //((NavigationPage)Application.Current.MainPage).BarTextColor = Color.White;
+
 
         }
 

@@ -2,9 +2,11 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XFAgenda.Views.AddContact"
-             Title="Novo Contato">
+             Title="Novo Contato"
+             BackgroundColor="Black">
     <ContentPage.Content>
-        <StackLayout>
+        <Frame CornerRadius="20" Margin="20">
+        <StackLayout BackgroundColor="White">
             <StackLayout Spacing="12">
                 <Entry x:Name="txtContactName" Text="{Binding Name}" HeightRequest="40" BackgroundColor="White" Placeholder="Nome Completo" HorizontalOptions="FillAndExpand"/>
                 <Entry  x:Name="txtMobileNumber" Keyboard="Telephone" Text="{Binding MobileNumber}" BackgroundColor="White" HeightRequest="40" Placeholder="Número do Telefone" HorizontalOptions="FillAndExpand"/>
@@ -24,11 +26,13 @@
             </StackLayout>
             <Button x:Name="SubmitButton" 
                 Command="{Binding AddContactCommand}" 
-                BorderRadius="0" 
-                Text="Salvar" 
+                BorderRadius="10" 
+                Text="Salvar"
+                Margin="40, 0"
                 FontAttributes="Bold" 
                 TextColor="White" 
                 BackgroundColor="Black"/>
         </StackLayout>
+        </Frame>
     </ContentPage.Content>
 </ContentPage>
